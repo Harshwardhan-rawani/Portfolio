@@ -29,14 +29,11 @@ function Project() {
                 key={index}
                 initial={{scale:0.5}}
                 whileInView={{scale:1}} 
-   
-                whileHover={{rotate:[0,3,0,-3,0,3,0]}}
-                whileTap={{rotate:[0,3,0,-3,0,3,0]}}
                 transition={{duration:0.5}}  
             
                 viewport={{once:true}}
 
-                className='shadow-md h-38 hover:bg-gray-200'>
+                className='shadow-md h-38 hover:bg-gray-200 pb-2'>
                 <img src={e[0]}  className='w-full ' alt="" />
                 <div className='text-gray-500 text-center mb-3 text-sm mt-2' >{e[1]}</div>
               
