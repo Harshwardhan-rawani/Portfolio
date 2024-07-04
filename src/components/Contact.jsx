@@ -7,7 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 function Contact() {
   return (
     <>
-    <div>
+    <div className='mt-5'>
         <div className='flex lg:flex-row flex-col-reverse font-serif'>
             <div className='lg:w-1/2 flex overflow-hidden justify-center items-center shadow-md scale-110 bg-gray-50'>
             <motion.div
