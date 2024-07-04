@@ -56,7 +56,7 @@ function App() {
         <Project/>
        </div>
       </Element>
-      <Element name="service" className="element w-[100%] flex justify-center">
+      <Element name="contact" className="element w-[100%] flex justify-center">
       <div className='w-[90vw]'>
           <Contact/>
         </div>
