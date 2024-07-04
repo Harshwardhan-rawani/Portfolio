@@ -15,7 +15,7 @@ function Skill() {
   return (
    <>
    <div className='lg:flex justify-between space-y-4 lg:space-y-0  lg:px-10 xl:px-32  p-4 lg:mt-20 '>
-   <div className='w-1/4  flex justify-center items-center'>
+   <div className='w-1/2  flex justify-center items-center'>
         <div className='w-fit p-4 overflow-hidden'>
         <motion.div 
         initial={{translateX:"-100%"}}
