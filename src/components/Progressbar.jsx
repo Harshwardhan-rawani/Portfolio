@@ -20,7 +20,7 @@ function Progressbar({value,text,icon}) {
    <>
     <motion.div 
       initial = {{rotate:0}}
-      whileTap={{rotate:[5,0,-5,0,5,0,-5,0]}}
+      whileHover={{rotate:[5,0,-5,0,5,0,-5,0]}}
       transition={{duration:0.5}}
     ref={ref} style={{  position: 'relative' }} className=' hover:bg-gray-200 shadow-md lg:py-3 lg:px-4 lg:w-[1/4] w-[1/5]  pt-2 pb-2 rounded-md'>
     <div className='text-center font-semibold text-gray-400'>
