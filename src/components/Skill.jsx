@@ -27,7 +27,7 @@ function Skill() {
         </div>
         
         </div>
-     <div  className='grid  md:grid-cols-4 md:gap-10 grid-cols-2  gap-2 '>
+     <div  className='grid  md:grid-cols-4 md:gap-10 grid-cols-2  gap-3 '>
       {[["Python",80,python],["Java",70,java],["React",68,react],["JavaScript",70,js],["Nodejs",85,nodejs],["Express",85,express],["SQL",79,sql]].map((e,index)=>{
          return  <motion.div 
                   initial={{scale:0.4}}

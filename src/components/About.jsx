@@ -36,7 +36,7 @@ function About() {
   <div className='flex justify-center'><img src={photo} alt="" className='w-3/4  px-2 '/></div>
   <div className='flex justify-center'>
   <div className='border-2 w-3/4 border-t-0 p-2 shadow-md '>
-  <div className='text-center italic '>
+  <div className='text-center italic text-gray-600 '>
      Harshwardhan Rawani
   </div>
   
