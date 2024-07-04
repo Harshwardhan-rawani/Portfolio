@@ -37,7 +37,7 @@ function Indicator() {
       />
       <circle
         className="progress-ring__circle z-50"
-        stroke="orange"
+        stroke="#2F3645"
         strokeWidth="3"
         fill="transparent"
         r={radius}
@@ -47,7 +47,7 @@ function Indicator() {
         style={{ strokeDasharray: circumference, strokeDashoffset: offset }}
       />
         <foreignObject x="38" y="38" width="100" height="100" transform='rotate(90,50,50)' >
-          <Link to='home' className='text-orange-400'><MdOutlineKeyboardDoubleArrowUp className='text-2xl'/></Link>
+          <Link to='home' className='text-gray-800 hover:text-gray-800'><MdOutlineKeyboardDoubleArrowUp className='text-2xl'/></Link>
 
   </foreignObject>
     </svg>

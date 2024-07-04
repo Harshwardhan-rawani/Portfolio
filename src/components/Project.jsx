@@ -4,8 +4,9 @@ import ecom from "../assets/ecom.png"
 import photogallery from "../assets/photogallery.png"
 import space from "../assets/space.png"
 import { motion, spring, useScroll } from "framer-motion";
+import { Link } from 'react-router-dom';
 function Project() {
-  const project=[[resume,"Frontend","Portfolio"],[ecom,"FullStack","E-Commerce"],[space,"Frontend","Blog"],[photogallery,"Frontend","Photogallery"]]
+  const project=[[resume,"Frontend","Portfolio","https://portfolio-mu-ten-25.vercel.app/"],[ecom,"FullStack","E-Commerce","https://ecommerce-coral-five-60.vercel.app/"],[space,"Frontend","Blog","https://space-pro-five.vercel.app/"],[photogallery,"Frontend","Photogallery","https://frontendphoto.vercel.app/"]]
   return (
     <>
         <div className='mt-5 font-serif lg:mb-20'>
@@ -22,21 +23,27 @@ function Project() {
         </div>
         
         </div>
-               <div className='md:w-3/4 grid lg:grid-cols-4 grid-cols-2 gap-4'>
+               <div className='md:w-3/4 grid lg:grid-cols-4 grid-cols-2 gap-4 mt-3'>
                {project.map(((e,index)=>{
-                return <motion.div 
+                return <Link to={e[3]}> <motion.div 
                 key={index}
                 initial={{scale:0.5}}
-                whileInView={{scale:1}}
+                whileInView={{scale:1}} 
+   
+                whileHover={{rotate:[0,3,0,-3,0,3,0]}}
+                whileTap={{rotate:[0,3,0,-3,0,3,0]}}
+                transition={{duration:0.5}}  
+            
                 viewport={{once:true}}
-                transition={{duration:0.5,type:"spring",stiffness:100,damping:10}}
-                className='shadow-md h-38'>
+
+                className='shadow-md h-38 hover:bg-gray-200'>
                 <img src={e[0]}  className='w-full ' alt="" />
                 <div className='text-gray-500 text-center mb-3 text-sm mt-2' >{e[1]}</div>
               
                 <div className='text-gray-500 text-center mb-1 font-semibold'>{e[2]}</div>
 
               </motion.div>
+              </Link>
                }))}
                 
                 

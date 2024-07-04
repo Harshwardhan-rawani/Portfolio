@@ -7,8 +7,9 @@ import linkedin from "../assets/linkedin.svg"
 import facebook from "../assets/facebook.svg"
 import instagram from "../assets/instagram.svg"
 import github from "../assets/github.svg"
+import { Link } from 'react-router-dom';
 function About() {
- const image = [linkedin,facebook,instagram,github]
+ const image = [[linkedin,"https://www.linkedin.com/in/harshwardhan-rawani-a0697b24a/"],[instagram,"12"],[github,"https://github.com/Harshwardhan-rawani?tab=repositories"]]
   return (
     <>
     <div className='font-serif '>
@@ -102,7 +103,7 @@ transition={{type:"spring",stiffness:100,damping:10,duration:1}}
            viewport={{amount:0.2,once:true}}
         >--------
    {image.map((e,index)=>{
-    return <div><img src={e} alt="" className='w-5 mx-2' /></div>
+    return <Link to={e[1]}><img src={e[0]} alt="" className='w-5 mx-2' /></Link>
    })}--------
         </motion.div>
  </div>
